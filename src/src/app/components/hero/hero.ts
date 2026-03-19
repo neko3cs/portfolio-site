@@ -4,20 +4,41 @@ import { Component } from '@angular/core';
   selector: 'app-hero',
   imports: [],
   template: `
-    <section class="section-container min-h-[80vh] flex flex-col items-center justify-center text-center reveal" id="hero">
-      <div class="mb-12">
-        <img src="X_Icon.PNG" alt="neko3cs" class="w-24 h-24 md:w-32 md:h-32 rounded-full grayscale hover:grayscale-0 transition-all duration-700 p-1 border border-gray-200">
+    <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 reveal" id="hero">
+      <div class="mb-12 animate-in fade-in zoom-in duration-1000">
+        <img src="X_Icon.PNG" alt="neko3cs" class="w-32 h-32 md:w-48 md:h-48 rounded-[40px] shadow-2xl shadow-black/10 ring-1 ring-black/5">
       </div>
-      <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-[ -0.05em] text-gray-900">
-        neko3cs
+      
+      <h1 class="apple-heading-l mb-4">
+        neko3cs.
       </h1>
-      <div class="w-12 h-1 bg-accent mb-8 mx-auto"></div>
-      <p class="text-xl md:text-2xl font-medium mb-4 text-gray-800 tracking-tight">
+      
+      <p class="text-2xl md:text-3xl font-semibold text-text-sub mb-6 tracking-tight">
         Web Developer / Software Engineer
       </p>
-      <p class="text-text-sub max-w-lg mx-auto leading-relaxed italic">
-        "フロントもバックも。好きなのはコードと、ねこです。"
+
+      <p class="text-xl md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed mb-10">
+        フロントもバックも。好きなのはコードと、ねこです。
       </p>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-6">
+        <a href="https://x.com/neko3cs" target="_blank" 
+           class="p-4 rounded-full bg-white shadow-sm border border-border hover:border-accent hover:text-accent transition-all duration-300 group"
+           aria-label="X (Twitter)">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        
+        <a href="https://github.com/neko3cs" target="_blank" 
+           class="p-4 rounded-full bg-white shadow-sm border border-border hover:border-accent hover:text-accent transition-all duration-300 group"
+           aria-label="GitHub">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+      </div>
     </section>
   `,
   styles: ``,

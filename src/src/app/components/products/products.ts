@@ -5,30 +5,22 @@ import { ProductItem } from '../../models/product-item';
   selector: 'app-products',
   imports: [],
   template: `
-    <section class="section-container reveal" id="products">
-      <h2 class="section-title">
-        <span class="section-number">03.</span> Products
-      </h2>
+    <section class="apple-section reveal" id="products">
+      <h2 class="apple-heading-m mb-16 text-center">Products.</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         @for (product of productList; track product.name) {
-          <a [href]="product.url" target="_blank" class="chic-card group block">
-            <div class="flex justify-between items-start mb-6">
-              <h3 class="text-2xl font-bold group-hover:text-accent transition-colors duration-500 tracking-tight">
-                {{ product.name }}
-              </h3>
-              <div class="p-2 group-hover:bg-accent/5 rounded-full transition-all duration-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 group-hover:text-accent group-hover:-translate-y-1 group-hover:translate-x-1 transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </div>
-            </div>
-            <p class="text-text-sub leading-relaxed mb-8 h-12 overflow-hidden">
+          <div class="apple-card group p-12 flex flex-col items-center text-center">
+            <h3 class="text-4xl font-bold mb-4 tracking-tighter">{{ product.name }}</h3>
+            <p class="text-xl text-text-sub mb-8 max-w-sm">
               {{ product.description }}
             </p>
-            <div class="inline-flex items-center text-xs font-mono font-bold tracking-widest text-accent uppercase border-b-2 border-accent/20 group-hover:border-accent transition-all duration-500">
-              Explore →
-            </div>
-          </a>
+            <a [href]="product.url" target="_blank" class="apple-link text-xl">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
         }
       </div>
     </section>
@@ -37,10 +29,10 @@ import { ProductItem } from '../../models/product-item';
 })
 export class Products {
   productList: ProductItem[] = [
-    { name: 'cryptstr', description: '文字列を暗号化・復号するツールです。', url: 'https://github.com/neko3cs/cryptstr' },
-    { name: 'dnzip', description: '.NET製のzipツールです。', url: 'https://github.com/neko3cs/dnzip' },
-    { name: 'ng-weather-app', description: 'Angular製のお天気アプリです。', url: 'https://github.com/neko3cs/ng-weather-app' },
-    { name: 'good-dose-drug-button', description: 'お薬を飲んだら褒めて貰えるアプリです。', url: 'http://github.com/neko3cs/good-dose-drug-button' },
-    { name: 'FP-Studio', description: 'IFPUG準拠なFP見積アプリです。', url: 'https://github.com/neko3cs/FP-Studio' }
+    { name: 'cryptstr', description: '文字列を暗号化・復号する。安全でシンプルなツール。', url: 'https://github.com/neko3cs/cryptstr' },
+    { name: 'dnzip', description: '.NET製のzipツール。パフォーマンスと信頼性を両立。', url: 'https://github.com/neko3cs/dnzip' },
+    { name: 'ng-weather-app', description: 'Angular製。直感的なお天気アプリ。', url: 'https://github.com/neko3cs/ng-weather-app' },
+    { name: 'good-dose-drug-button', description: '日常に小さな喜びを。お薬を飲んだら褒めて貰えるアプリ。', url: 'http://github.com/neko3cs/good-dose-drug-button' },
+    { name: 'FP-Studio', description: 'IFPUG準拠なFP見積アプリ。精緻なプロジェクト管理のために。', url: 'https://github.com/neko3cs/FP-Studio' }
   ];
 }

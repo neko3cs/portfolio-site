@@ -5,32 +5,27 @@ import { ExperienceItem } from '../../models/experience-item';
   selector: 'app-experience',
   imports: [],
   template: `
-    <section class="section-container reveal" id="experience">
-      <h2 class="section-title">
-        <span class="section-number">04.</span> Experience
-      </h2>
-      <div class="space-y-16">
+    <section class="apple-section reveal" id="experience">
+      <h2 class="apple-heading-m mb-20 text-center">Experience.</h2>
+      <div class="space-y-12">
         @for (exp of experiences; track exp.period) {
-          <div class="group relative">
-            <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-6">
-              <h3 class="text-2xl font-bold mb-2 md:mb-0">{{ exp.organization }}</h3>
-              <span class="text-sm font-mono text-accent bg-accent/5 px-3 py-1 rounded-full">{{ exp.period }}</span>
+          <div class="apple-card p-12">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+              <div class="max-w-xl">
+                <p class="text-sm font-bold text-accent mb-2 tracking-widest uppercase">{{ exp.period }}</p>
+                <h3 class="text-3xl font-bold mb-6 tracking-tight">{{ exp.organization }}</h3>
+                <p class="text-xl text-text-main leading-relaxed mb-8">
+                  {{ exp.content }}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  @for (tech of exp.techStack; track tech) {
+                    <span class="px-3 py-1 bg-bg-base rounded-full text-xs font-semibold text-text-sub uppercase tracking-wider">
+                      {{ tech }}
+                    </span>
+                  }
+                </div>
+              </div>
             </div>
-            
-            <p class="text-lg text-text-main mb-6 leading-relaxed">{{ exp.content }}</p>
-
-            <div class="flex flex-wrap gap-2">
-              @for (tech of exp.techStack; track tech) {
-                <span class="text-xs font-medium text-text-sub px-3 py-1 bg-gray-50 border border-gray-100 rounded-sm uppercase tracking-wide">
-                  {{ tech }}
-                </span>
-              }
-            </div>
-
-            <!-- Decorative divider for all but last -->
-            @if (!$last) {
-              <div class="absolute -bottom-8 left-0 w-full h-px bg-gray-100"></div>
-            }
           </div>
         }
       </div>
@@ -56,7 +51,7 @@ export class Experience {
       period: '2013.04 — 2017.03',
       organization: '某工業大学 情報学部',
       content: 'コンピューター基礎学、C++プログラミング、ネットワーク、UI/UX、GC、Webデザイン、ゲームプログラミングなどを学ぶ',
-      techStack: ['C++', 'OpenCV', 'OpenGL', 'Unity', '分散人工知能', 'Maya', 'Adobe']
+      techStack: ['C++', 'OpenCV', 'OpenGL', 'Unity', 'Maya', 'Adobe', 'Web Design', '分散人工知能']
     }
   ];
 }

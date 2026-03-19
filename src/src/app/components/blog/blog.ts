@@ -5,19 +5,13 @@ import { BlogItem } from '../../models/blog-item';
   selector: 'app-blog',
   imports: [],
   template: `
-    <section class="section-container reveal" id="blog">
-      <h2 class="section-title">
-        <span class="section-number">05.</span> Blog
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section class="apple-section reveal" id="blog">
+      <h2 class="apple-heading-m mb-16 text-center">Blog.</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         @for (blog of blogs; track blog.name) {
-          <a [href]="blog.url" target="_blank" class="group relative flex items-center justify-between p-8 border border-gray-100 bg-gray-50/50 hover:bg-white hover:border-accent/30 transition-all duration-500 overflow-hidden">
-            <span class="text-xl font-bold group-hover:text-accent transition-colors duration-500">{{ blog.name }}</span>
-            <div class="p-2 group-hover:bg-accent/5 rounded-full transition-all duration-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 group-hover:text-accent transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </div>
+          <a [href]="blog.url" target="_blank" class="apple-card p-12 flex flex-col items-center text-center group">
+            <h3 class="text-3xl font-bold mb-4 tracking-tight group-hover:text-accent transition-colors">{{ blog.name }}</h3>
+            <span class="apple-link text-lg">Read more</span>
           </a>
         }
       </div>

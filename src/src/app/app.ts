@@ -1,16 +1,26 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Hero } from "./components/hero/hero";
+import { About } from "./components/about/about";
+import { Skills } from "./components/skills/skills";
+import { Products } from "./components/products/products";
+import { Blog } from "./components/blog/blog";
+import { Experience } from "./components/experience/experience";
+import { Contact } from "./components/contact/contact";
+import { Footer } from "./components/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Hero, About, Skills, Products, Blog, Experience, Contact, Footer],
   template: `
-    <h1>Hello, {{ title() }}</h1>
-
-    <router-outlet />
+    <app-hero />
+    <app-about />
+    <app-skills />
+    <app-products />
+    <app-blog />
+    <app-experience />
+    <app-contact />
+    <app-footer />
   `,
   styles: [],
 })
-export class App {
-  protected readonly title = signal('portfolio-site');
-}
+export class App {}

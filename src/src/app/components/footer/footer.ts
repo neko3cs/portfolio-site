@@ -4,10 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   imports: [],
   template: `
-    <!-- 
-      - © {new Date().getFullYear()} neko3cs
-    -->
+    <footer class="section-container border-t border-white/5 text-center pb-12">
+      <p class="text-sm text-text-sub">
+        &copy; {{ currentYear }} neko3cs
+      </p>
+    </footer>
   `,
   styles: ``,
 })
-export class Footer { }
+export class Footer {
+  currentYear = new Date().getFullYear();
+}

@@ -3,7 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-blog',
   imports: [],
-  template: ` <p>blog works!</p> `,
+  template: `
+  <!-- 
+    - はてなブログ: https://blog.neko3cs.net/
+    - Zenn: https://zenn.dev/neko3cs
+  -->
+  `,
   styles: ``,
 })
-export class Blog {}
+export class Blog { }

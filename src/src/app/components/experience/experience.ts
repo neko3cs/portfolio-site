@@ -38,19 +38,19 @@ export class Experience {
     {
       period: '2019.04 — PRESENT',
       organization: 'R社',
-      content: '要件定義、設計、実装、テスト、運用保守を担当',
+      content: 'Xにてスカウト採用。要件定義、設計、実装、テスト、運用保守を担当する。',
       techStack: ['C#', '.NET', 'WPF', 'ASP.NET Core', 'SQL Server', 'Windows Server', 'PowerShell', 'Azure', 'AWS', 'Git']
     },
     {
       period: '2017.04 — 2019.03',
       organization: 'I社',
-      content: '実装、テストを担当',
+      content: '新卒採用。実装、テストを担当する。',
       techStack: ['C#', '.NET Framework', 'ASP.NET', 'AngularJS', 'SQL Server', 'Azure', 'VSS']
     },
     {
       period: '2013.04 — 2017.03',
       organization: '某工業大学 情報学部',
-      content: 'コンピューター基礎学、C++プログラミング、ネットワーク、UI/UX、GC、Webデザイン、ゲームプログラミングなどを学ぶ',
+      content: 'コンピューター基礎学、C++プログラミング、ネットワーク、UI/UX、GC、Webデザイン、ゲームプログラミングなどを学ぶ。',
       techStack: ['C++', 'OpenCV', 'OpenGL', 'Unity', 'Maya', 'Adobe', 'Web Design', '分散人工知能']
     }
   ];

@@ -22,7 +22,7 @@ import { Component } from '@angular/core';
         </div>
         
         <!-- Interests Card -->
-        <div class="apple-card p-12 bg-[#1d1d1f] text-white">
+        <div class="apple-card p-12 bg-text-main text-white">
           <p class="text-xs uppercase tracking-widest font-bold text-gray-400 mb-8">Interests</p>
           <ul class="space-y-4">
             @for (item of interests; track item) {

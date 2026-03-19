@@ -38,7 +38,7 @@ export class Experience {
     {
       period: '2019.04 — PRESENT',
       organization: 'R社',
-      content: 'Xにてスカウト採用。要件定義、設計、実装、テスト、運用保守を担当する。',
+      content: 'X(旧Twitter)にてスカウト採用。要件定義、設計、実装、テスト、運用保守を担当する。',
       techStack: ['C#', '.NET', 'WPF', 'ASP.NET Core', 'SQL Server', 'Windows Server', 'PowerShell', 'Azure', 'AWS', 'Git']
     },
     {

@@ -1,3 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --color-accent: #2563eb;
+  --color-bg: #ffffff;
+  --color-text-main: #111827;
+  --color-text-sub: #4b5563;
+  --color-border: #e5e7eb;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-main font-sans selection:bg-accent/10 selection:text-accent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-bold tracking-tight text-text-main;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-4xl mx-auto px-8 py-24 md:py-32;
+  }
+
+  .reveal {
+    @apply opacity-0 translate-y-4 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)];
+  }
+
+  .reveal.active {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-16 tracking-tighter flex items-baseline gap-4;
+  }
+
+  .section-number {
+    @apply text-sm font-mono font-medium text-accent uppercase tracking-[0.2em];
+  }
+
+  .chic-card {
+    @apply bg-white border border-border p-8 rounded-sm hover:border-accent/40 transition-all duration-500 hover:shadow-xl hover:shadow-accent/5;
+  }
+}

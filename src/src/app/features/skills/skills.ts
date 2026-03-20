@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillCategory } from '../../models/skill-category';
+import { SkillCategory } from './skill-category';
 
 @Component({
   selector: 'app-skills',

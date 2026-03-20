@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SocialLink } from '../../models/social-link';
+import { SocialLink } from './social-link';
 
 @Component({
   selector: 'app-contact',

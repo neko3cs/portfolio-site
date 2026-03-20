@@ -1,13 +1,13 @@
 import { Component, AfterViewInit, ElementRef, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { Hero } from "./components/hero/hero";
-import { About } from "./components/about/about";
-import { Skills } from "./components/skills/skills";
-import { Products } from "./components/products/products";
-import { Blog } from "./components/blog/blog";
-import { Experience } from "./components/experience/experience";
-import { Contact } from "./components/contact/contact";
-import { Footer } from "./components/footer/footer";
+import { Hero } from "./features/hero/hero";
+import { About } from "./features/about/about";
+import { Skills } from "./features/skills/skills";
+import { Products } from "./features/products/products";
+import { Blog } from "./features/blog/blog";
+import { Experience } from "./features/experience/experience";
+import { Contact } from "./features/contact/contact";
+import { Footer } from "./features/footer/footer";
 
 @Component({
   selector: 'app-root',

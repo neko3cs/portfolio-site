@@ -50,7 +50,7 @@ export class Experience {
     {
       period: '2013.04 — 2017.03',
       organization: '某工業大学 情報学部',
-      content: 'コンピューター基礎学、C++プログラミング、ネットワーク、UI/UX、GC、Webデザイン、ゲームプログラミングなどを学ぶ。',
+      content: 'コンピューター基礎学、C++プログラミング、ネットワーク、UI/UX、CG、Webデザイン、ゲームプログラミングなどを学ぶ。',
       techStack: ['C++', 'OpenCV', 'OpenGL', 'Unity', 'Maya', 'Adobe', 'Web Design', '分散人工知能']
     }
   ];

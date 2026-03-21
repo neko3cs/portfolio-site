@@ -28,9 +28,9 @@ import { SkillCategory } from './skill-category';
 export class Skills {
   skillCategories: SkillCategory[] = [
     { title: 'Language', skills: ['TypeScript', 'C++', 'C#', 'zsh', 'pwsh'] },
-    { title: 'Framework', skills: ['Angular', 'React', 'Vite', 'Electron', '.NET', 'TailwindCSS'] },
+    { title: 'Framework', skills: ['Angular', 'React', 'Node.js', 'Vite', 'Electron', '.NET', 'TailwindCSS'] },
     { title: 'Database', skills: ['SQL Server', 'PostgreSQL', 'SQLite'] },
-    { title: 'Tool', skills: ['Docker', 'pnpm', 'Node.js'] },
-    { title: 'Cloud', skills: ['Azure', 'Google Cloud'] }
+    { title: 'Tool', skills: ['git', 'Docker', 'pnpm', 'GitHub Copilot CLI'] },
+    { title: 'Cloud', skills: ['Azure', 'Google Cloud', 'Cloudflare'] }
   ];
 }

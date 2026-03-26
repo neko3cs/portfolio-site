@@ -31,8 +31,6 @@ export class Products {
   productList: ProductItem[] = [
     { name: 'cryptstr', description: '文字列を暗号化・復号する。安全でシンプルなツール。', url: 'https://github.com/neko3cs/cryptstr' },
     { name: 'dnzip', description: '.NET製のzipツール。パフォーマンスと信頼性を両立。', url: 'https://github.com/neko3cs/dnzip' },
-    { name: 'ng-weather-app', description: 'Angular製。直感的なお天気アプリ。', url: 'https://github.com/neko3cs/ng-weather-app' },
-    { name: 'good-dose-drug-button', description: '日常に小さな喜びを。お薬を飲んだら褒めて貰えるアプリ。', url: 'http://github.com/neko3cs/good-dose-drug-button' },
     { name: 'FP-Studio', description: 'IFPUG準拠なFP見積アプリ。精緻なプロジェクト管理のために。', url: 'https://github.com/neko3cs/FP-Studio' }
   ];
 }

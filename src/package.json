@@ -10,7 +10,6 @@
     "serve:ssr:portfolio-site": "node dist/portfolio-site/server/server.mjs"
   },
   "private": true,
-  "packageManager": "pnpm@10.32.1",
   "dependencies": {
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",

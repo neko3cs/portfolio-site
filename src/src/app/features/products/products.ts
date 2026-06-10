@@ -31,6 +31,7 @@ export class Products {
   productList: ProductItem[] = [
     { name: 'cryptstr', description: '文字列を暗号化・復号する。安全でシンプルなツール。', url: 'https://github.com/neko3cs/cryptstr' },
     { name: 'dnzip', description: '.NET製のzipツール。パフォーマンスと信頼性を両立。', url: 'https://github.com/neko3cs/dnzip' },
-    { name: 'FP-Studio', description: 'IFPUG準拠なFP見積アプリ。精緻なプロジェクト管理のために。', url: 'https://github.com/neko3cs/FP-Studio' }
+    { name: 'FP-Studio', description: 'IFPUG準拠なFP見積アプリ。精緻なプロジェクト管理のために。', url: 'https://github.com/neko3cs/FP-Studio' },
+    { name: 'umalog', description: '競馬メモアプリです。予想や馬券情報のメモが出来ます。', url: 'https://github.com/neko3cs/umalog' }
   ];
 }

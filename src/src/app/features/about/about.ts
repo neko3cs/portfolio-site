@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
             }
           </ul>
         </div>
-        
+
         <!-- Interests Card -->
         <div class="apple-card p-12 bg-text-main text-white">
           <p class="text-xs uppercase tracking-widest font-bold text-gray-400 mb-8">Interests</p>
@@ -53,5 +53,5 @@ export class About {
     'エンタープライズソフトウェアエンジニア'
   ];
   interests = ['Webフロントエンド', 'UI/UX', '自動化', 'QA'];
-  hobbies = ['プログラミング', 'ゲーム', 'ベース', 'アニメ', 'キャンプ', 'スノボ', '睡眠'];
+  hobbies = ['プログラミング', 'ゲーム', 'ベース', 'アニメ', '競馬', 'キャンプ', 'スノボ', '睡眠'];
 }

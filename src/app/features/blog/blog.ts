@@ -21,7 +21,7 @@ import { BlogItem } from './blog-item';
 })
 export class Blog {
   blogs: BlogItem[] = [
-    { name: 'はてなブログ', url: 'https://blog.neko3cs.net/' },
+    { name: 'ねこさんのぶろぐ', url: 'https://blog.neko3cs.net/' },
     { name: 'Zenn', url: 'https://zenn.dev/neko3cs' }
   ];
 }
